@@ -34,23 +34,25 @@ In this paper, we develop an approach to infer the presence of elevated skin tem
 4) Video dataset of subjects with normal skin temperature and artificially elevated skin temperature 
 
 ## Method
+
 In this work, we utilize an RGB camera instead of an infrared camera, which allows the integration of the method with a smartphone application or other camera-based systems such as digital cameras, thereby increasing its potential scale and accessibility due to the ubiquity of video-recording devices [[1]](http://openaccess.thecvf.com/content/ICCV2021W/V4V/html/Revanur_The_First_Vision_for_Vitals_V4V_Challenge_for_Non-Contact_Video-Based_ICCVW_2021_paper.html),[[2]](https://link.springer.com/chapter/10.1007/978-3-031-14771-5_22). Studies [[3]](https://www.sciencedirect.com/science/article/pii/S1350449515000523), [[4]](https://asmedigitalcollection.asme.org/IMECE/proceedings-abstract/IMECE2012/127/260549) found that the measured skin temperature drops by more than $4^o$ F with an angular deviation of $45^o$ and above from normal incidence. Arieli et al. have empirically studied the differences in the magnitude of apparent skin temperature drop with a change in infrared camera viewing angle for different skin temperatures. The study also found that the apparent drop in skin temperature with increasing viewing angle is steeper for higher skin temperatures. 
 
 In order to leverage the dependence of the change in apparent skin temperature with camera angle using a facial video, we calculate the skin reflectance at different instances, corresponding to different camera angles. Measuring the absolute skin temperature using the calculated skin reflectance requires knowledge of ambient temperature and skin-specific parameters such as emissivity, which are difficult to measure using a facial video. To circumvent the need to measure skin-specific and atmospheric properties, we calculate an intermediate ratio called the `Radiatively Inspired Reflectance ratio' (RIR ratio) instead of attempting to calculate the absolute temperature. We utilize the calculated RIR ratio and the camera viewing angle to determine the HOT factor from the lookup function we generated from the results of the study by Arieli et al., which documented the changes in apparent skin temperature with the camera viewing angle. To determine the RIR ratio and the camera viewing angle at each frame of the video, we need to track the subject's face throughout the video using a face tracking algorithm. We employ a real-time face tracking algorithm called ZFace for obtaining facial regions-of-interest (ROI). After extracting the facial ROIs, we obtain the reflectance of the ROI by computing the mean pixel intensity. The RIR ratio is calculated as
 
-$\frac{T_i}{T_j} \approx \left[\frac{\tau_{atm}~\left(I_{p_i} - 1\right) + 1}{\tau_{atm}~\left(I_{p_j} - 1\right) + 1} \right] ^{1/4}$
+$$\frac{T_i}{T_j} \approx \left[\frac{\tau_{atm}~\left(I_{p_i} - 1\right) + 1}{\tau_{atm}~\left(I_{p_j} - 1\right) + 1} \right] ^{1/4}$$
 
-where $T_i$ and $T_j$ are the temperatures of the skin at two different head poses ($i$ and $j$), $\tau_{atm}$ is the transmittivity of the atmosphere, $I_{p_i}$ and $I_{p_j}$ are the pixel intensities of the tracked facial landmark at the two head poses $i$ and $j$. Head pose $i$ is the base head pose (defined by the head pose in the first frame of the video), where the head is aligned with the camera line of sight. Head pose $j$ is the head pose at any instant in the video. The difference in the yaw angle with respect to the first frame of the video provides a measure of subject head angular deviation for the particular frame ($|yaw_i - yaw_j|$). The RIR ratio and the subject head angular deviation are provided as input to the lookup function which outputs the HOT factor value. The HOT factor is used to classify subjects into having elevated or normal skin temperature, using a bnary threshold classifier. 
+where $T_i$ and $T_j$ are the temperatures of the skin at two different head poses ($i$ and $j$), $\tau_{atm}$ is the transmittivity of the atmosphere, $I_{p_i}$ and $I_{p_j}$ are the pixel intensities of the tracked facial landmark at the two head poses $i$ and $j$. Head pose $i$ is the base head pose (defined by the head pose in the first frame of the video), where the head is aligned with the camera line of sight. Head pose $j$ is the head pose at any instant in the video. The difference in the yaw angle with respect to the first frame of the video provides a measure of subject head angular deviation for the particular frame ($|yaw_i - yaw_j|$). The RIR ratio and the subject head angular deviation are provided as input to the lookup function which outputs the HOT factor value. The HOT factor is used to classify subjects into having elevated or normal skin temperature, using a binary threshold classifier. 
+
+![](https://github.com/CMU-Humanoids/skin-temp/blob/main/Screenshot%202023-03-27%20at%201.38.42%20PM.png)
 
 
 ## Dataset
 
-The 'Data' folder contains a dataset of 28 subjects we collected for our study. 
-TBD
+Coming soon.
 
 ## Running the script
 
-TBD
+Coming soon.
 
 ## Citation
 
