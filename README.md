@@ -1,4 +1,4 @@
-# Video-based Elevated Skin Temperature Detection
+# Video-based Elevated Skin Temperature Detection - Work In Progress
 
 ## Introduction
 In this work, we propose a non-contact video-based approach that detects when an individual's skin temperature is elevated beyond the normal range. The detection of elevated skin temperature is critical as a diagnostic tool to infer the presence of an infection or an abnormal health condition. Detection of elevated skin temperature is typically achieved using contact thermometers or non-contact infrared-based sensors. The ubiquity of video data acquisition devices such as mobile phones and computers motivates the development of a binary classification approach, the Video-based TEMPerature (V-TEMP) to classify subjects with non-elevated/elevated skin temperature. We leverage the correlation between the skin temperature and the angular reflectance distribution of light, to empirically differentiate between skin at non-elevated temperature and skin at elevated temperature. We demonstrate the uniqueness of this correlation by 
