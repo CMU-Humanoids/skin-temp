@@ -26,7 +26,7 @@ In this paper, we develop an approach to infer the presence of elevated skin tem
 
 ## Dataset
 
-TThe 'Data' folder contains a dataset of 28 subjects we collected for our study. 
+The 'Data' folder contains a dataset of 28 subjects we collected for our study. 
 TBD
 
 ## Running the script
