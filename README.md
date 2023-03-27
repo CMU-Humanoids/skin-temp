@@ -22,6 +22,20 @@ In this paper, we develop an approach to infer the presence of elevated skin tem
 1) Mathematical foundation for elevated skin temperature detection based on skin angular reflectance properties
 2) Demonstration of the uniqueness of facial skin reflectance properties that allow the detection of elevated skin temperature
 3) Experimental validation of approach in controlled and outside-the-lab settings to demonstrate robustness of the approach
+4) Video dataset of subjects with normal skin temperature and artificially elevated skin temperature 
 
+## Dataset
 
+TThe 'Data' folder contains a dataset of 28 subjects we collected for our study. 
+TBD
+
+## Running the script
+
+TBD
+
+## Citation
+
+If you use any of the data or resources provided on this page in any of your publications we ask you to cite the following work.
+
+Dasari, A., Revanur, A., Jeni, L. A., & Tucker, C. S. (2023). Video-based Elevated Skin Temperature Detection. IEEE Transactions on Biomedical Engineering.
 
