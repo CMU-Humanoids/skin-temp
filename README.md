@@ -6,9 +6,18 @@ In this work, we propose a non-contact video-based approach that detects when an
 1) revealing the existence of a difference in the angular reflectance distribution of light from skin-like and non-skin like material and 
 2) exploring the consistency of the angular reflectance distribution of light in materials exhibiting optical properties similar to human skin. 
 
+
+https://user-images.githubusercontent.com/129078932/228007006-e0f545da-07f0-4580-897b-2b41ef0b84fc.mov
+
+
+
 Finally, we demonstrate the robustness of V-TEMP by evaluating the efficacy of elevated skin temperature detection on subject videos recorded in 
 1) laboratory controlled environments and 
 2) outside-the-lab environments. 
+
+Some of the results we obtained using our approach are shown below. 
+
+![](https://github.com/CMU-Humanoids/skin-temp/blob/main/Graphical_Abstract.tif)
 
 V-TEMP is beneficial in two ways
 
