@@ -22,7 +22,7 @@ Finally, we demonstrate the robustness of V-TEMP by evaluating the efficacy of e
 2) outside-the-lab environments. 
 
 **Please visit the official project** [**page**](https://github.com/AiPEX-Lab/skin-temp) **for more details.**
-**The associated journal publication can be found [**here.**](https://ieeexplore.ieee.org/iel7/10/4359967/10050004.pdf)
+**The associated journal publication can be found** [**here.**](https://ieeexplore.ieee.org/iel7/10/4359967/10050004.pdf)
 
 ## Citation
 
