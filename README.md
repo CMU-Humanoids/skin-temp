@@ -9,6 +9,7 @@ In this work, we propose a non-contact video-based approach that detects when an
 Finally, we demonstrate the robustness of V-TEMP by evaluating the efficacy of elevated skin temperature detection on subject videos recorded in 
 1) laboratory controlled environments and 
 2) outside-the-lab environments. 
+
 V-TEMP is beneficial in two ways
 
 1) it is non-contact-based, reducing the possibility of infection due to contact and 
