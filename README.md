@@ -6,6 +6,13 @@ In this work, we propose a non-contact video-based approach that detects when an
 1) revealing the existence of a difference in the angular reflectance distribution of light from skin-like and non-skin like material and 
 2) exploring the consistency of the angular reflectance distribution of light in materials exhibiting optical properties similar to human skin. 
 
+Finally, we demonstrate the robustness of V-TEMP by evaluating the efficacy of elevated skin temperature detection on subject videos recorded in 
+1) laboratory controlled environments and 
+2) outside-the-lab environments. 
+V-TEMP is beneficial in two ways
+
+1) it is non-contact-based, reducing the possibility of infection due to contact and 
+2) it is scalable, given the ubiquity of video-recording devices
 
 https://user-images.githubusercontent.com/129078932/228007006-e0f545da-07f0-4580-897b-2b41ef0b84fc.mov
 
@@ -13,7 +20,7 @@ Finally, we demonstrate the robustness of V-TEMP by evaluating the efficacy of e
 1) laboratory controlled environments and 
 2) outside-the-lab environments. 
 
-Please visit the official prroject [page](https://github.com/AiPEX-Lab/skin-temp) for more details. 
+**Please visit the official project [page](https://github.com/AiPEX-Lab/skin-temp) for more details. **
 
 ## Citation
 
